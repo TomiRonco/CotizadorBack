@@ -1,0 +1,31 @@
+WARNING:django.request:Not Found: /
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): prestamos.ikiwi.net.ar:443
+DEBUG:urllib3.connectionpool:https://prestamos.ikiwi.net.ar:443 "GET /api/v1/engine/uva/valores/ HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /update-uva/
+Traceback (most recent call last):
+  File "C:\Users\Tomi\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tomi\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tomi\Documents\GitHub\ADRIAN\backend\project_cotizador\views.py", line 19, in update_uva_value
+    date = soup.find('some_tag_containing_date').text
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO:django.utils.autoreload:C:\Users\Tomi\Documents\GitHub\ADRIAN\backend\project_cotizador\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Tomi\Documents\GitHub\ADRIAN\backend\project_cotizador\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Tomi\Documents\GitHub\ADRIAN\backend\project_cotizador\views.py changed, reloading.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): prestamos.ikiwi.net.ar:443
+DEBUG:urllib3.connectionpool:https://prestamos.ikiwi.net.ar:443 "GET /api/v1/engine/uva/valores/ HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /update-uva/
+Traceback (most recent call last):
+  File "C:\Users\Tomi\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tomi\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Tomi\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view project_cotizador.views.update_uva_value didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Tomi\Documents\GitHub\ADRIAN\backend\project_cotizador\views.py changed, reloading.
