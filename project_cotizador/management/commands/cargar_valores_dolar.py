@@ -9,7 +9,7 @@ class Command(BaseCommand):
     help = 'Actualiza los valores del dólar desde la fuente externa'
 
     def handle(self, *args, **kwargs):
-        website = 'https://mercados.ambito.com//dolar/informal/historico-general/2000-01-01/2024-01-03'
+        website = 'https://mercados.ambito.com//dolar/informal/historico-general/2000-01-01/2024-12-31'
         result = requests.get(website)
         content = result.text
 

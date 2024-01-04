@@ -72,7 +72,7 @@ def update_uva_value(request):
     return HttpResponse(response_text)
 
 def update_dollar_value(request):
-    website = 'https://mercados.ambito.com//dolar/informal/historico-general/2000-01-01/2024-01-03'
+    website = 'https://mercados.ambito.com//dolar/informal/historico-general/2000-01-01/2024-12-31'
     result = requests.get(website)
     content = result.text
 
