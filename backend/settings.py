@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-plukps&&rmci1k9986klzwrtf68h$d*%549jd@+$l4v2ed5wyy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'cotizadahoyback.onrender.com']
 
 
 # Application definition
