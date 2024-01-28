@@ -27,13 +27,13 @@ def process_data(request):
 
             if uva_value:
                 # Multiplica el monto por el valor de UVA y redondea a dos cifras
-                result['uva'] = round(amount * uva_value.value, 2)
+                result['uva'] = round(amount / uva_value.value, 2)
             else:
                 print(f"No se encontraron valores de uva para la fecha {date}")
 
             if dollar_value:
-                result['dollarPurchase'] = round(amount * float(dollar_value.buy_value), 2)
-                result['dollarSale'] = round(amount * float(dollar_value.sell_value), 2)
+                result['dollarPurchase'] = round(amount / float(dollar_value.buy_value), 2)
+                result['dollarSale'] = round(amount / float(dollar_value.sell_value), 2)
             else:
                 print(f"No se encontraron valores de dólar para la fecha {date}")
 
